@@ -1,5 +1,6 @@
 # 1. Write a Python program to sum all the items in a list.
 
+
 # Method 1
 
 list1 = [10,20,30,40,50]
