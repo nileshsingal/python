@@ -1,4 +1,4 @@
-# 2. Write a Python program to multiplies all the items in a list. 
+# 2. Write a Python program to multiplies all the items in a list . 
 
 # Method 1
 '''
