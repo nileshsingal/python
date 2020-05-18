@@ -6,3 +6,5 @@ print(set2)
 
 set2.clear()
 print(set2)
+
+
