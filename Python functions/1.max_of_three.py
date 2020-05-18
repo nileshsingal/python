@@ -1,4 +1,4 @@
-# 1. Write a Python function to find the Max of three numbers.
+# 1. Write a Python function to find the Max of three numbers. 
 
 def max_of_three(n1,n2,n3):
     if n1 > n2 and n1 > n3:
