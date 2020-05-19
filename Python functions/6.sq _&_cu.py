@@ -14,3 +14,4 @@ def sq_cu(xlist):
 
 sq_cu([1,2,3,4,5])
 
+
