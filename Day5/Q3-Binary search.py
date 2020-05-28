@@ -1,28 +1,34 @@
 #Write a Python program for Binary search.
 
-pos = -1
-def binarySearch(xlist,n):
-    l = 0
-    u = len(xlist)-1
 
-    while l <= n:
-        
-        mid = (l + u) // 2
+def BinarySearch(list1, key):
+
+    low = 0
+    high = len(list1)-1
     
-        if xlist[mid] == n:
-            globals() ['pos'] = mid
-            return True
+    Found = False
+
+    while low <= high and not Found:
+        mid = (low + high) // 2
+
+        if key == list1[mid]:
+            Found = True
+        elif key > list1[mid]:
+            low = mid + 1
         else:
-            if xlist[mid] < n:
-                l = mid
-            else:
-                u = mid
+            high = mid - 1
 
-xlist=[7,12,34,45,76]
+    if Found == True:
+        print("Key is found ")
+    else:
+        print("key is not found ")
 
-n = 45
 
-if binarySearch(xlist, n):
-    print("Found at :", pos+1)
-else:
-    print("Not Found")
+
+
+list1 = [10,23,56,78,5,87,98,33]
+list1.sort()
+key = int(input("Enter key value :"))
+print(list1)
+BinarySearch(list1, key)
+
